@@ -1,0 +1,5 @@
+@import 'EXT:site_package/Configuration/TsConfig/Page/PageLayout/*.tsconfig'
+
+TCEFORM.tt_content.frame_class {
+   removeItems = ruler-before,ruler-after,indent,indent-left,indent-right,none
+}

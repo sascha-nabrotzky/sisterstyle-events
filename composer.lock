@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "486f29656b62e97dbf63608ccbe464cc",
+    "content-hash": "e42c5fde2cb9a04c70924d548279c8bc",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -2041,6 +2041,56 @@
                 "source": "https://github.com/ralouphie/getallheaders/tree/develop"
             },
             "time": "2019-03-08T08:55:37+00:00"
+        },
+        {
+            "name": "sn/site-package",
+            "version": "1.0.0",
+            "dist": {
+                "type": "path",
+                "url": "./packages/site_package",
+                "reference": "74455f579ef14e2f9000aa473a3f1023bf0eea0d"
+            },
+            "require": {
+                "typo3/cms-core": "^14.1.0|dev-main",
+                "typo3/cms-fluid-styled-content": "^14.1.0|dev-main"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "typo3/cms": {
+                    "extension-key": "site_package"
+                },
+                "branch-alias": {
+                    "dev-master": "14.1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Sn\\SitePackage\\": "Classes/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Sascha Nabrotzky",
+                    "role": "Developer",
+                    "homepage": "https://typo3.org/community/teams/documentation"
+                }
+            ],
+            "description": "Site package for SisterStyle Events",
+            "homepage": "https://github.com/sascha-nabrotzky/sascha-nabrotzky.de",
+            "keywords": [
+                "documentation",
+                "site package",
+                "typo3"
+            ],
+            "support": {
+                "issues": "https://github.com/sascha-nabrotzky/sascha-nabrotzky.de/issues"
+            },
+            "transport-options": {
+                "relative": true
+            }
         },
         {
             "name": "symfony/cache",
@@ -7390,13 +7440,15 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {},
+    "stability-flags": {
+        "sn/site-package": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {},
     "platform-dev": {},
     "platform-overrides": {
-        "php": "8.2.0"
+        "php": "8.5.0"
     },
     "plugin-api-version": "2.9.0"
 }
