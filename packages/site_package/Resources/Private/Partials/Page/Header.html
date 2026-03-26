@@ -1,0 +1,18 @@
+<header class="main-header">
+    <nav class="main-nav">
+        <f:link.page
+            pageUid="{startpage_id}"
+            class="nav-item {f:if(condition: '{startpage_id} == {data.uid}', then: 'active')}"
+        >
+            Home
+        </f:link.page>
+        <f:for each="{mainNavigation}" as="mainNavItem">
+            <f:link.page
+                pageUid="{mainNavItem.data.uid}"
+                class="nav-item {f:if(condition: mainNavItem.active, then: 'active')}"
+            >
+                {mainNavItem.title}
+            </f:link.page>
+        </f:for>
+    </nav>
+</header>

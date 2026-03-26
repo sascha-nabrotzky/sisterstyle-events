@@ -1,0 +1,71 @@
+@font-face {
+    font-family: 'Americana BT Roman';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('../fonts/Americana-BT-Roman.ttf') format('truetype');
+}
+
+:root {
+    --ff-serif: 'Americana BT Roman', 'Times New Roman', Times, serif;
+    --ff-sans:
+        'Inter', 'Roboto', 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial,
+        sans-serif;
+
+    /* Major Third */
+    --fs-xs: 0.64rem;
+    --fs-sm: 0.8rem;
+    --fs-base: 1rem;
+    --fs-lg: 1.25rem;
+    --fs-xl: 1.563rem;
+    --fs-2xl: 1.953rem;
+    --fs-3xl: 2.441rem;
+    --fs-4xl: 3.052rem;
+    --fs-5xl: 3.815rem;
+
+    /* Line heights */
+    --lh-xs: 0.9;
+    --lh-sm: 1.1;
+    --lh-base: 1.5; /* p */
+
+    /* Colors */
+    --color-white: #fffbf7;
+    --color-black: #202020;
+    --color-burgund: #733236;
+    --color-blushed-earth: #9d7982;
+    --color-dusty-rose: #c8b7c9;
+    --color-slated-gray: #8ba4b3;
+    --color-eucalyptus: #9cb2a5;
+    --color-sand: #e3dbd3;
+
+    /* Special */
+    interpolate-size: allow-keywords;
+}
+
+@layer typography {
+    /* Font features */
+    body {
+        font-family: var(--ff-sans);
+        font-size: var(--fs-base);
+        line-height: var(--lh-base);
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        word-break: break-word;
+        hyphens: auto;
+        text-wrap: balance;
+        font-family: var(--ff-serif);
+    }
+}
+
+@layer layout {
+    body {
+        background-color: var(--color-burgund);
+        color: var(--color-white);
+        padding: 2rem;
+    }
+}
