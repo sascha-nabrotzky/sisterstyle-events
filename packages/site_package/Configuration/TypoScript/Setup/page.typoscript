@@ -30,7 +30,9 @@ page {
       importcss = EXT:site_package/Resources/Public/Css/import.css
   }
 
-  includeJSFooter {}
+  includeJSFooter {
+    alpinejs = EXT:site_package/Resources/Public/Javascript/alpine_5.15.11.min.js
+  }
 
   bodyTagCObject = TEXT
   bodyTagCObject {

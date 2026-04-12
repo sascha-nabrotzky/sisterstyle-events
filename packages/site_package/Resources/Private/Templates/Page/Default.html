@@ -17,6 +17,7 @@
 <f:section name="Main">
     <f:if condition="{mainContent}">
         <main id="main" class="main">
+            <h1 x-data="{ message: 'I ❤️ Alpine' }" x-text="message"></h1>
             <f:for each="{mainContent}" as="contentMainElement">
                 <f:cObject
                     typoscriptObjectPath="tt_content.{contentMainElement.data.CType}"
