@@ -1,5 +1,9 @@
 @layer theme, base, layout, components;
 
+@import url('colors.css') layer(theme);
+@import url('typography.css') layer(theme);
+@import url('spacing.css') layer(theme);
+
 @import url('normalize.css') layer(base);
 @import url('global.css') layer(base);
 
