@@ -1,0 +1,29 @@
+/* CE Images */
+.ce-right .image {
+    text-align: right;
+}
+
+.ce-center .image {
+    text-align: center;
+}
+
+/* Text alignment */
+.ce-headline-left {
+    text-align: left;
+}
+.ce-headline-center {
+    text-align: center;
+}
+.ce-headline-right {
+    text-align: right;
+}
+
+.text-start {
+    text-align: start;
+}
+.text-center {
+    text-align: center;
+}
+.text-end {
+    text-align: end;
+}
