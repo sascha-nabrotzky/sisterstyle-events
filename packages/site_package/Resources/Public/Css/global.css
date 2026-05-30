@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: var(--color-burgund);
-    color: var(--color-white);
+    background-color: var(--semantic-color-body-bg);
+    color: var(--semantic-color-body-text);
     padding: 2rem;
 }

@@ -94,48 +94,35 @@ page.10 {
          as = mainNavigation
       }
 
-      15 = menu
-      15 {
-          entryLevel = 1
-          includeSpacer = 1
-          as = subNavigation
-      }
-
-      20 = TYPO3\CMS\Frontend\DataProcessing\LanguageMenuProcessor
+      20 = menu
       20 {
-        languages = auto
-        as = languageNavigation
-      }
-
-      30 = menu
-      30 {
           special = directory
           special.value = {$site_package.configuration.folder.privacy} // ID of the page where the menu should start
           as = privacyNavigation
       }
 
-      50 = database-query
-      50 {
+      30 = database-query
+      30 {
         table = tt_content
         orderBy = sorting
         where = colPos = 0
-        as = extendedContent
+        as = extendedTopContent
       }
 
-      60 = database-query
-      60 {
+      40 = database-query
+      40 {
         table = tt_content
         orderBy = sorting
         where = colPos = 1
         as = mainContent
       }
 
-      80 = database-query
-      80 {
+      50 = database-query
+      50 {
         table = tt_content
         orderBy = sorting
         where = colPos = 2
-        as = footerContent
+        as = extendedBottomContent
       }
     }
 

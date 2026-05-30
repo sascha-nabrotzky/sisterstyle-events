@@ -1,12 +1,12 @@
 <f:layout name="Default" />
 
-<f:section name="Extended">
-    <f:if condition="{extendedContent}">
-        <div class="extended">
-            <f:for each="{extendedContent}" as="contentExtendedElement">
+<f:section name="ExtendedTop">
+    <f:if condition="{extendedTopContent}">
+        <div class="extended-top">
+            <f:for each="{extendedTopContent}" as="contentTopExtendedElement">
                 <f:cObject
-                    typoscriptObjectPath="tt_content.{contentExtendedElement.data.CType}"
-                    data="{contentExtendedElement.data}"
+                    typoscriptObjectPath="tt_content.{contentTopExtendedElement.data.CType}"
+                    data="{contentTopExtendedElement.data}"
                     table="tt_content"
                 />
             </f:for>
@@ -29,16 +29,19 @@
     </f:if>
 </f:section>
 
-<f:section name="Footer">
-    <footer>
-        <f:if condition="{footerContent}">
-            <f:for each="{footerContent}" as="contentFooterElement">
+<f:section name="ExtendedBottom">
+    <f:if condition="{extendedBottomContent}">
+        <div class="extended-bottom">
+            <f:for
+                each="{extendedBottomContent}"
+                as="contentBottomExtendedElement"
+            >
                 <f:cObject
-                    typoscriptObjectPath="tt_content.{contentFooterElement.data.CType}"
-                    data="{contentFooterElement.data}"
+                    typoscriptObjectPath="tt_content.{contentBottomExtendedElement.data.CType}"
+                    data="{contentBottomExtendedElement.data}"
                     table="tt_content"
                 />
             </f:for>
-        </f:if>
-    </footer>
+        </div>
+    </f:if>
 </f:section>
