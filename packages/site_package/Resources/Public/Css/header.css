@@ -1,0 +1,29 @@
+.main-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 3rem;
+}
+
+.logo {
+    flex-shrink: 0;
+    width: 15rem;
+    color: var(--alias-color-brand-01-500);
+
+    @media screen and (width < 40rem) {
+        width: 10rem;
+    }
+}
+
+.main-nav {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    column-gap: 2rem;
+
+    a {
+        white-space: nowrap;
+        color: var(--alias-color-text-default);
+    }
+}
