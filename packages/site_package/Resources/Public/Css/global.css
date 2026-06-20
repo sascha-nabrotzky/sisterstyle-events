@@ -22,7 +22,7 @@ body {
 }
 
 .notification {
-    background-color: var(--alias-color-brand-07-500);
+    background-color: var(--color-eucalyptus-500);
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
     border-radius: 1rem;
     padding: 1rem;

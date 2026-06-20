@@ -3,3 +3,10 @@
 TCEFORM.tt_content.frame_class {
    removeItems = ruler-before,ruler-after,indent,indent-left,indent-right,none
 }
+
+TCEFORM.tt_content.frame_class {
+   removeItems = ruler-before,ruler-after,indent,indent-left,indent-right,none
+   addItems {
+      hero-text = LLL:EXT:site_package/Resources/Private/Language/locallang.xlf:hero-text
+   }
+}

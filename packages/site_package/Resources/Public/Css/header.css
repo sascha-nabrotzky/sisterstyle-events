@@ -9,7 +9,7 @@
 .logo {
     flex-shrink: 0;
     width: 15rem;
-    color: var(--alias-color-brand-01-500);
+    color: var(--color-merlot-500);
 
     @media screen and (width < 40rem) {
         width: 10rem;
@@ -24,6 +24,52 @@
 
     a {
         white-space: nowrap;
-        color: var(--alias-color-text-default);
+        color: var(--color-green-500);
     }
+}
+
+/* Hero Image */
+
+.hero-image-container {
+    position: absolute;
+    top: 0;
+    right: 5rem;
+    max-width: 30rem;
+}
+
+.hero-image {
+    border-bottom-left-radius: 20rem;
+    border-bottom-right-radius: 20rem;
+    width: calc(100% - 4rem);
+    overflow: hidden;
+    z-index: 1;
+    position: relative;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.hero-overlay-line {
+    position: absolute;
+    top: 10rem;
+    left: 5rem;
+    border: 2px solid var(--color-green-400);
+    border-radius: 20rem;
+    width: 20rem;
+    height: 35rem;
+    z-index: 2;
+}
+
+.hero-overlay-surface {
+    position: absolute;
+    top: 5rem;
+    right: 0;
+    border-radius: 20rem;
+    background-color: var(--color-green-200);
+    width: 20rem;
+    height: 35rem;
+    z-index: 0;
 }

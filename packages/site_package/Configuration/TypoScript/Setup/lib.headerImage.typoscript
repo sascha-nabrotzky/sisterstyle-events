@@ -1,0 +1,23 @@
+lib.headerImage = FILES
+lib.headerImage {
+    references {
+        table = pages
+        uid.data = page:uid
+        fieldName = media
+    }
+
+    begin = 0
+    maxItems = 1
+
+    renderObj = COA
+    renderObj {
+        10 = IMAGE
+        10 {
+            file {
+                import.data = file:current:publicUrl
+                crop.data = file:current:crop
+                cropVariant = header
+            }
+        }
+    }
+}
