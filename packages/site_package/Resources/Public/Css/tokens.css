@@ -4,6 +4,9 @@
 
 :root {
     --space-01: 4;
+    --font-family-handwriting: Island Moments;
+    --font-family-serif: Americana BT;
+    --font-family-sans-serif: Source Sans 3;
     --scale: 2rem;
     --font-size-hero: 69;
     --font-size-3xl: 44;
@@ -95,6 +98,9 @@
     --sem-color-tertiary-default: var(--color-blush-500);
     --sem-color-accent-default: var(--color-merlot-500);
     --sem-font-size-headline-01: var(--font-size-4xl);
+    --sem-font-family-hero-accent: var(--font-family-handwriting);
+    --sem-font-family-hero-title: var(--font-family-serif);
+    --sem-font-family-hero-text: var(--font-family-sans-serif);
     --br-lg: var(--br-md) * var(--scale);
     --space-03: var(--space-02) * var(--scale);
     --sem-space-button-padding-block-default: var(--space-02);

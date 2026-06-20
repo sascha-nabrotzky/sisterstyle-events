@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 'Americana BT Roman';
+    font-family: 'Americana BT';
     font-style: normal;
     font-weight: 400;
     font-display: swap;
@@ -34,19 +34,20 @@
 }
 
 :root {
-    --ff-serif: 'Americana BT Roman', 'Times New Roman', Times, serif;
-    --ff-sans: 'Source Sans 3', sans-serif;
+    --ff-serif: var(--font-family-serif), 'Times New Roman', Times, serif;
+    --ff-sans: var(--font-family-sans-serif), sans-serif;
+    --ff-handwriting: var(--font-family-handwriting), italic;
 
     /* Major Third */
-    --fs-sm: calc(var(--font-size-small) * 1rem);
-    --fs-base: calc(var(--font-size-base) * 1px);
-    --fs-lg: calc(var(--font-size-lg) * 1rem);
-    --fs-xl: calc(var(--font-size-xl) * 1rem);
-    --fs-2xl: calc(var(--font-size-2xl) * 1rem);
-    --fs-3xl: calc(var(--font-size-3xl) * 1rem);
-    --fs-4xl: calc(var(--font-size-4xl) * 1rem);
-    --fs-hero: calc(var(--font-size-hero) * 1rem);
-    --fs-hero-accent: calc(var(--font-size-hero-accent) * 1rem);
+    --fs-sm: calc(var(--font-size-small) / 16 * 1rem);
+    --fs-base: calc(var(--font-size-base) / 16 * 1rem);
+    --fs-lg: calc(var(--font-size-lg) / 16 * 1rem);
+    --fs-xl: calc(var(--font-size-xl) / 16 * 1rem);
+    --fs-2xl: calc(var(--font-size-2xl) / 16 * 1rem);
+    --fs-3xl: calc(var(--font-size-3xl) / 16 * 1rem);
+    --fs-4xl: calc(var(--font-size-4xl) / 16 * 1rem);
+    --fs-hero: calc(var(--font-size-hero) / 16 * 1rem);
+    --fs-hero-accent: calc(var(--font-size-hero-accent) / 16 * 1rem);
 
     /* Line heights */
     --lh-xs: 0.9;
@@ -66,9 +67,10 @@ h3,
 h4,
 h5 {
     word-break: break-word;
-    font-family: var(--ff-serif);
+    font-family: var(--font-family-serif);
     hyphens: auto;
     text-wrap: balance;
+    margin-block: unset;
 }
 
 nav a {
