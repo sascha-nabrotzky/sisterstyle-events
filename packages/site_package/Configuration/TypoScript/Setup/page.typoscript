@@ -31,7 +31,6 @@ page {
   }
 
   includeJSFooter {
-    alpinejs = EXT:site_package/Resources/Public/JavaScript/alpine_5.15.11.min.js
   }
 
   bodyTagCObject = TEXT
