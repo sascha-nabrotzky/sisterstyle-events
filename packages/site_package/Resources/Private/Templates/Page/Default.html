@@ -2,7 +2,7 @@
 
 <f:section name="ExtendedTop">
     <f:if condition="{extendedTopContent}">
-        <div class="extended-top">
+        <section class="extended-top">
             <f:for each="{extendedTopContent}" as="contentTopExtendedElement">
                 <f:cObject
                     typoscriptObjectPath="tt_content.{contentTopExtendedElement.data.CType}"
@@ -10,7 +10,7 @@
                     table="tt_content"
                 />
             </f:for>
-        </div>
+        </section>
     </f:if>
 </f:section>
 
@@ -30,7 +30,7 @@
 
 <f:section name="ExtendedBottom">
     <f:if condition="{extendedBottomContent}">
-        <div class="extended-bottom">
+        <section class="extended-bottom">
             <f:for
                 each="{extendedBottomContent}"
                 as="contentBottomExtendedElement"
@@ -41,6 +41,6 @@
                     table="tt_content"
                 />
             </f:for>
-        </div>
+        </section>
     </f:if>
 </f:section>

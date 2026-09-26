@@ -1,0 +1,21 @@
+name: sn/hero-image
+typeName: sn_heroimage
+group: default
+prefixFields: true
+prefixType: full
+fields:
+  -
+    identifier: header
+    useExistingField: true
+    label: Header
+    type: Text
+  - identifier: subheader
+    useExistingField: true
+    label: Unterüberschrift
+    type: Text
+  - identifier: image
+    useExistingField: true
+    label: Bild
+    allowed: jpeg,jpg,png,webp
+    maxitems: 1
+    type: File

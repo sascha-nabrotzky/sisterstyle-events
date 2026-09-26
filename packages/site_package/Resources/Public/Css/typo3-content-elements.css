@@ -28,22 +28,6 @@
     text-align: end;
 }
 
-/* Hero Text */
-.frame-hero-text.frame-layout-0 header {
-    > * {
-        font-weight: 400;
-        line-height: 1;
-    }
-    > :first-child {
-        font-family: var(--sem-font-family-hero-accent);
-        font-size: clamp(3rem, 1.5rem + 6.67vw, var(--fs-hero-accent));
-    }
-    > :last-child {
-        font-family: var(--sem-font-family-hero-title);
-        font-size: clamp(2rem, 1.25rem + 3.4vw, var(--fs-hero));
-    }
-}
-
 @media screen and (width > 40rem) {
     .main-header:has(.hero-image-container) + .extended-top {
         padding-inline-end: calc(var(--hero-image-container-width) + 2rem);

@@ -1,3 +1,4 @@
-:root {
-    /* Hier kommt der Farbwechsel hin */
+body {
+    background-color: var(--color-neutral-50);
+    color: var(--sem-color-body-text);
 }

@@ -11,7 +11,6 @@
 @import url('header.css') layer(layout);
 @import url('main.css') layer(layout);
 @import url('footer.css') layer(layout);
-@import url('legal.css') layer(layout);
 
 @import url('contact-form.css') layer(components);
 @import url('typo3-content-elements.css') layer(components);

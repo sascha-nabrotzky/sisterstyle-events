@@ -73,11 +73,25 @@ h5 {
     margin-block: unset;
 }
 
-nav a {
-    text-decoration: none;
+h1,
+h2 {
+    line-height: 1.1;
+}
 
-    &:hover {
-        text-decoration: underline;
-        text-underline-offset: 0.5rem;
+/* Hero Text */
+.frame-hero-text.frame-layout-0 header {
+    > * {
+        font-weight: 400;
+    }
+    > :first-child {
+        font-family: var(--sem-font-family-hero-accent);
+        font-size: clamp(3rem, 1.5rem + 6.67vw, var(--fs-hero-accent));
+        line-height: 0.7;
+        margin-bottom: 0.5rem;
+    }
+    > :last-child {
+        font-family: var(--sem-font-family-hero-title);
+        font-size: clamp(2rem, 1.25rem + 3.4vw, var(--fs-hero));
+        line-height: 1;
     }
 }
