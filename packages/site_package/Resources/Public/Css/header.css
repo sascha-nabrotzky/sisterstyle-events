@@ -11,7 +11,7 @@
 .logo {
     flex-shrink: 0;
     width: 15rem;
-    color: var(--color-merlot-500);
+    color: var(--sem-color-text-default);
 
     @media screen and (width < 40rem) {
         width: 10rem;
@@ -26,6 +26,6 @@
 
     a {
         white-space: nowrap;
-        color: var(--color-green-500);
+        color: var(--sem-color-text-default);
     }
 }

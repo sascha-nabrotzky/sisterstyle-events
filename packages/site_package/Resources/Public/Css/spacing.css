@@ -1,32 +1,32 @@
 /* Spacings from BE */
 .frame-space-before-extra-small {
-    margin-top: 1rem;
+    margin-top: var(--sem-space-layout-gutter-xs);
 }
 .frame-space-before-small {
-    margin-top: 2rem;
+    margin-top: var(--sem-space-layout-gutter-sm);
 }
 .frame-space-before-medium {
-    margin-top: 3rem;
+    margin-top: var(--sem-space-layout-gutter-md);
 }
 .frame-space-before-large {
-    margin-top: 4rem;
+    margin-top: var(--sem-space-layout-gutter-lg);
 }
 .frame-space-before-extra-large {
-    margin-top: 5rem;
+    margin-top: var(--sem-space-layout-gutter-xl);
 }
 
 .frame-space-after-extra-small {
-    margin-bottom: 1rem;
+    margin-bottom: var(--sem-space-layout-gutter-xs);
 }
 .frame-space-after-small {
-    margin-bottom: 2rem;
+    margin-bottom: var(--sem-space-layout-gutter-sm);
 }
 .frame-space-after-medium {
-    margin-bottom: 3rem;
+    margin-bottom: var(--sem-space-layout-gutter-md);
 }
 .frame-space-after-large {
-    margin-bottom: 4rem;
+    margin-bottom: var(--sem-space-layout-gutter-lg);
 }
 .frame-space-after-extra-large {
-    margin-bottom: 5rem;
+    margin-bottom: var(--sem-space-layout-gutter-xl);
 }

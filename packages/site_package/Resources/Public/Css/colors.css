@@ -1,4 +1,4 @@
 body {
-    background-color: var(--color-neutral-50);
-    color: var(--sem-color-body-text);
+    background-color: var(--sem-color-surface-01);
+    color: var(--sem-color-text-default);
 }

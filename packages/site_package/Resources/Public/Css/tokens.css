@@ -3,27 +3,46 @@
  */
 
 :root {
-    --space-01: 4;
-    --font-family-handwriting: Island Moments;
-    --font-family-serif: Americana BT;
-    --font-family-sans-serif: Source Sans 3;
-    --scale: 2rem;
-    --font-size-hero: 69;
-    --font-size-3xl: 44;
-    --font-size-4xl: 55;
-    --font-size-2xl: 35;
-    --font-size-small: 14;
-    --font-size-base: 18;
-    --font-size-hero-accent: 120;
-    --font-size-lg: 23;
-    --font-size-xl: 28;
-    --dimension-base: 4rem;
-    --color-neutral-50: #fffbf7;
-    --color-neutral-100: #d2d2d2;
-    --color-neutral-200: #a6a6a6;
-    --color-neutral-300: #797979;
-    --color-neutral-400: #4d4d4d;
-    --color-neutral-500: #202020;
+    --space-2: 0.125rem; /** Haarlinien-Abstände, extrem feine UI-Tweakings.  */
+    --space-4: 0.25rem; /** Sehr kompakt. Perfekt für den Abstand zwischen Label und Input oder Badges. */
+    --space-8: 0.5rem; /** Die Basis-Einheit. Typischer Abstand zwischen Icon und Text oder Listen-Elementen.  */
+    --space-12: 0.75rem; /** Der harmonische Zwischenschritt für kompakte Paddings (z.B. in Tabellen).  */
+    --space-16: 1rem; /** Der globale Standard. Ideales Standard-Padding für Karten und Container.  */
+    --space-24: 1.5rem; /** Großzügiges Padding für größere Desktop-Komponenten oder Hero-Cards.  */
+    --space-32: 2rem; /** Beginn des Makro-Layouts. Abstand zwischen logischen Sektionen.  */
+    --space-48: 3rem; /** Großer Abstand. Perfekt für Grid-Gaps oder White-Space auf Landingpages.  */
+    --space-64: 4rem; /** Starker visueller Bruch. Abstand zwischen Hauptbereichen (z.B. Header zu Content).  */
+    --space-96: 6rem; /** Maximaler Weißraum für großzügige Desktop-Layouts. */
+    --space-128: 8rem;
+    --serif: 'Americana BT';
+    --tracking-xs: 0.003125rem;
+    --tracking-sm: 0.009375rem;
+    --font-size-3xl: 2.75rem;
+    --font-size-4xl: 3.4375rem;
+    --font-size-2xl: 2.1875rem;
+    --font-size-base: 1.125rem;
+    --font-size-lg: 1.4375rem;
+    --font-size-xl: 1.75rem;
+    --font-size-6xl: 7.5rem;
+    --font-size-5xl: 4.3125rem;
+    --font-size-sm: 0.875rem;
+    --regular: 400;
+    --border-radius-4: 0.25rem;
+    --border-radius-8: 0.5rem;
+    --border-radius-12: 0.75rem;
+    --border-radius-16: 1rem;
+    --border-radius-24: 1.5rem;
+    --border-radius-32: 2rem;
+    --border-radius-9999: 624.9375rem;
+    --size-12: 0.75rem;
+    --size-16: 1rem; /** Kleine Inline-Icons (z.B. in Text-Links), Status-Indikatoren.  */
+    --size-20: 1.25rem; /** Kompakte Icons für dichte Listen oder kleine Buttons. */
+    --size-24: 1.5rem; /** Standard-Icon-Größe für das gesamte System (Material/​​​Apple-Standard). */
+    --size-32: 2rem; /** Große Icons oder kleine Profilbilder (Avatare) in Navigationsleisten. */
+    --size-40: 2.5rem; /** Standard-Avatar für Kontaktlisten oder User-Profile. */
+    --size-48: 3rem; /** Große Avatare, Logos oder quadratische Medien-Thumbnails.  */
+    --sans-serif: 'Source Sans 3';
+    --bold: 700;
     --color-sand-100: #f9f8f6;
     --color-sand-200: #f4f1ed;
     --color-sand-300: #eee9e5;
@@ -33,51 +52,6 @@
     --color-sand-700: #88837f;
     --color-sand-800: #5b5854;
     --color-sand-900: #2d2c2a;
-    --color-merlot-100: #e3d6d7;
-    --color-merlot-200: #c7adaf;
-    --color-merlot-300: #ab8486;
-    --color-merlot-400: #8f5b5e;
-    --color-merlot-500: #733236;
-    --color-merlot-600: #5c282b;
-    --color-merlot-700: #451e20;
-    --color-merlot-800: #2e1416;
-    --color-merlot-900: #170a0b;
-    --color-blush-100: #ebe4e6;
-    --color-blush-200: #d8c9cd;
-    --color-blush-300: #c4afb4;
-    --color-blush-400: #b1949b;
-    --color-blush-500: #9d7982;
-    --color-blush-600: #7e6168;
-    --color-blush-700: #5e494e;
-    --color-blush-800: #3f3034;
-    --color-blush-900: #1f181a;
-    --color-rose-100: #f4f1f4;
-    --color-rose-200: #e9e2e9;
-    --color-rose-300: #ded4df;
-    --color-rose-400: #d3c5d4;
-    --color-rose-500: #c8b7c9;
-    --color-rose-600: #a092a1;
-    --color-rose-700: #786e79;
-    --color-rose-800: #504950;
-    --color-rose-900: #282528;
-    --color-slate-100: #e8edf0;
-    --color-slate-200: #d1dbe1;
-    --color-slate-300: #b9c8d1;
-    --color-slate-400: #a2b6c2;
-    --color-slate-500: #8ba4b3;
-    --color-slate-600: #6f838f;
-    --color-slate-700: #53626b;
-    --color-slate-800: #384248;
-    --color-slate-900: #1c2124;
-    --color-green-100: #d6dada;
-    --color-green-200: #adb5b5;
-    --color-green-300: #859191;
-    --color-green-400: #5c6c6c;
-    --color-green-500: #334747;
-    --color-green-600: #293939;
-    --color-green-700: #1f2b2b;
-    --color-green-800: #141c1c;
-    --color-green-900: #0a0e0e;
     --color-eucalyptus-100: #ebf0ed;
     --color-eucalyptus-200: #d7e0db;
     --color-eucalyptus-300: #c4d1c9;
@@ -87,27 +61,66 @@
     --color-eucalyptus-700: #5e6b63;
     --color-eucalyptus-800: #3e4742;
     --color-eucalyptus-900: #1f2421;
-    --space-02: var(--space-01) * var(--scale);
-    --br-md: var(--dimension-base) * var(--scale);
-    --br-xs: var(--dimension-base)-var(--scale);
-    --br-sm: var(--dimension-base);
-    --sem-color-body-bg: var(--color-neutral-50);
-    --sem-color-body-text: var(--color-green-500);
-    --sem-color-primary-default: var(--color-green-500);
-    --sem-color-secondary-default: var(--color-slate-500);
-    --sem-color-tertiary-default: var(--color-blush-500);
-    --sem-color-accent-default: var(--color-merlot-500);
+    --color-neutral-50: #fffbf7;
+    --color-neutral-100: #d2d2d2;
+    --color-neutral-200: #a6a6a6;
+    --color-neutral-300: #797979;
+    --color-neutral-400: #4d4d4d;
+    --color-neutral-500: #202020;
+    --color-wood-300: #bea898;
+    --color-wood-500: #977b5b;
+    --color-wood-700: #46392c;
+    --sem-font-size-hero: var(--font-size-5xl);
+    --sem-font-size-body: var(--font-size-base);
+    --sem-font-size-label: var(--font-size-base);
+    --sem-font-size-hero-accent: var(--font-size-6xl);
+    --sem-font-size-intro-text: var(--font-size-lg);
+    --sem-font-size-body-small: var(--font-size-sm);
+    --sem-font-size-label-small: var(--font-size-sm);
+    --sem-font-size-caption: var(--font-size-sm);
+    --sem-font-size-headline-03: var(--font-size-2xl);
+    --sem-font-size-headline-02: var(--font-size-3xl);
+    --sem-font-size-headline-04: var(--font-size-xl);
+    --sem-font-size-headline-05: var(--font-size-lg);
     --sem-font-size-headline-01: var(--font-size-4xl);
-    --sem-font-family-hero-accent: var(--font-family-handwriting);
-    --sem-font-family-hero-title: var(--font-family-serif);
-    --sem-font-family-hero-text: var(--font-family-sans-serif);
-    --br-lg: var(--br-md) * var(--scale);
-    --space-03: var(--space-02) * var(--scale);
-    --sem-space-button-padding-block-default: var(--space-02);
-    --space-04: var(--space-03) * var(--scale);
-    --sem-border-radius-btn-primary-default: var(--br-lg);
-    --space-05: var(--space-04) * var(--scale);
-    --space-06: var(--space-05) * var(--scale);
-    --sem-space-button-padding-inline-default: var(--space-05);
-    --space-07: var(--space-06) * var(--scale);
+    --sem-font-size-button: var(--font-size-base);
+    --sem-border-radius-xs: var(--border-radius-4);
+    --sem-border-radius-sm: var(--border-radius-8);
+    --sem-border-radius-md: var(--border-radius-12);
+    --sem-border-radius-lg: var(--border-radius-16);
+    --sem-border-radius-xl: var(--border-radius-32);
+    --sem-border-radius-full: var(--border-radius-9999);
+    --sem-size-icon-sm: var(--size-12);
+    --sem-size-icon-md: var(--size-16);
+    --sem-size-icon-lg: var(--size-20);
+    --sem-color-surface-01: var(--color-sand-100);
+    --sem-color-surface-02: var(--color-sand-200);
+    --sem-color-surface-03: var(--color-sand-300);
+    --sem-color-surface-04: var(--color-sand-400);
+    --sem-color-surface-05: var(--color-sand-500);
+    --sem-color-soft-ui-01: var(--color-eucalyptus-100);
+    --sem-color-soft-ui-02: var(--color-eucalyptus-200);
+    --sem-color-soft-ui-03: var(--color-eucalyptus-300);
+    --sem-color-soft-ui-04: var(--color-eucalyptus-400);
+    --sem-color-soft-ui-05: var(--color-eucalyptus-500);
+    --sem-color-alternative-05: var(--color-wood-300);
+    --sem-color-spot-05: var(--color-wood-700);
+    --sem-color-accent-05: var(--color-wood-500);
+    --sem-color-text-default: var(--color-neutral-500);
+    --sem-color-text-muted: var(--color-neutral-400);
+    --sem-space-gap-xs: var(--space-4);
+    --sem-space-gap-sm: var(--space-8);
+    --sem-space-gap-md: var(--space-16);
+    --sem-space-gap-lg: var(--space-24);
+    --sem-space-gap-xl: var(--space-32);
+    --sem-space-padding-xs: var(--space-4);
+    --sem-space-padding-sm: var(--space-8);
+    --sem-space-padding-md: var(--space-16);
+    --sem-space-padding-lg: var(--space-24);
+    --sem-space-padding-xl: var(--space-32);
+    --sem-space-layout-gutter-sm: var(--space-32);
+    --sem-space-layout-gutter-md: var(--space-48);
+    --sem-space-layout-gutter-lg: var(--space-64);
+    --sem-space-layout-gutter-xs: var(--space-16);
+    --sem-space-layout-gutter-xl: var(--space-96);
 }

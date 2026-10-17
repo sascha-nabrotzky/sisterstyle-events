@@ -11,13 +11,13 @@
         width: 100%;
         text-align: center;
         text-align: center;
-        color: var(--color-merlot-500);
+        color: var(--sem-color-spot-05);
 
         h1 {
-            font-size: var(--fs-hero-accent);
+            font-size: var(--sem-font-size-hero-accent);
         }
         h2 {
-            font-size: var(--fs-hero);
+            font-size: var(--sem-font-size-hero);
         }
     }
 }

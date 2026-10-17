@@ -33,32 +33,10 @@
     src: url('../fonts/source-sans-3-v19-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
-:root {
-    --ff-serif: var(--font-family-serif), 'Times New Roman', Times, serif;
-    --ff-sans: var(--font-family-sans-serif), sans-serif;
-    --ff-handwriting: var(--font-family-handwriting), italic;
-
-    /* Major Third */
-    --fs-sm: calc(var(--font-size-small) / 16 * 1rem);
-    --fs-base: calc(var(--font-size-base) / 16 * 1rem);
-    --fs-lg: calc(var(--font-size-lg) / 16 * 1rem);
-    --fs-xl: calc(var(--font-size-xl) / 16 * 1rem);
-    --fs-2xl: calc(var(--font-size-2xl) / 16 * 1rem);
-    --fs-3xl: calc(var(--font-size-3xl) / 16 * 1rem);
-    --fs-4xl: calc(var(--font-size-4xl) / 16 * 1rem);
-    --fs-hero: calc(var(--font-size-hero) / 16 * 1rem);
-    --fs-hero-accent: calc(var(--font-size-hero-accent) / 16 * 1rem);
-
-    /* Line heights */
-    --lh-xs: 0.9;
-    --lh-sm: 1.1;
-    --lh-base: 1.5; /* p */
-}
-
 body {
-    font-family: var(--ff-sans);
-    font-size: var(--fs-base);
-    line-height: var(--lh-base);
+    font-family: var(--sans-serif);
+    font-size: var(--sem-font-size-body);
+    line-height: 1.5;
 }
 
 h1,
@@ -67,7 +45,7 @@ h3,
 h4,
 h5 {
     word-break: break-word;
-    font-family: var(--font-family-serif);
+    font-family: var(--serif);
     hyphens: auto;
     text-wrap: balance;
     margin-block: unset;
@@ -76,22 +54,4 @@ h5 {
 h1,
 h2 {
     line-height: 1.1;
-}
-
-/* Hero Text */
-.frame-hero-text.frame-layout-0 header {
-    > * {
-        font-weight: 400;
-    }
-    > :first-child {
-        font-family: var(--sem-font-family-hero-accent);
-        font-size: clamp(3rem, 1.5rem + 6.67vw, var(--fs-hero-accent));
-        line-height: 0.7;
-        margin-bottom: 0.5rem;
-    }
-    > :last-child {
-        font-family: var(--sem-font-family-hero-title);
-        font-size: clamp(2rem, 1.25rem + 3.4vw, var(--fs-hero));
-        line-height: 1;
-    }
 }
