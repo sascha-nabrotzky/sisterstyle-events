@@ -1,0 +1,10 @@
+plugin.tx_cart.settings {
+    cart {
+        pid = # The PID of the page "Cart".
+        isNetCart = # 0 or 1, depending on your needs.
+        acceptTermsAndConditions.pid = # The PID of your terms and conditions page.
+        acceptRevocationInstruction.pid = # The PID of your revocation instructions page.
+        acceptPrivacyPolicy.pid = # The PID of your privacy policy page
+    }
+    order.pid = # The PID of the page "Orders".
+}

@@ -14,6 +14,8 @@
         "sort-packages": true
     },
     "require": {
+        "extcode/cart": "^12.0",
+        "extcode/cart-products": "^8.0",
         "friendsoftypo3/content-blocks": "^2.4",
         "sn/site-package": "@dev",
         "typo3/cms-backend": "^14.0",

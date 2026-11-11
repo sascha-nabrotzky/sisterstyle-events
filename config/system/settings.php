@@ -35,6 +35,9 @@ return [
             'loginLogo' => '',
             'loginLogoAlt' => '',
         ],
+        'cart_products' => [
+            'categoryRestriction' => '',
+        ],
     ],
     'FE' => [
         'cacheHash' => [
