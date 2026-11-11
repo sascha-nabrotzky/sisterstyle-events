@@ -33,9 +33,79 @@
     src: url('../fonts/source-sans-3-v19-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
+:root {
+    --fluid-vmin: 375px;
+    --fluid-vmax: 1080px;
+
+    --fluid: clamp(
+        0,
+        tan(
+            atan2(
+                100vw - var(--fluid-vmin),
+                var(--fluid-vmax) - var(--fluid-vmin)
+            )
+        ),
+        1
+    );
+
+    /* Primitive fluide Schriftgroessen. Variablen kommen aus tokens.css */
+    --font-size-sm-fluid: calc(
+        var(--font-size-mobile-sm) + var(--fluid) *
+            (var(--font-size-desktop-sm) - var(--font-size-mobile-sm))
+    );
+    --font-size-base-fluid: calc(
+        var(--font-size-mobile-base) + var(--fluid) *
+            (var(--font-size-desktop-base) - var(--font-size-mobile-base))
+    );
+    --font-size-lg-fluid: calc(
+        var(--font-size-mobile-lg) + var(--fluid) *
+            (var(--font-size-desktop-lg) - var(--font-size-mobile-lg))
+    );
+    --font-size-xl-fluid: calc(
+        var(--font-size-mobile-xl) + var(--fluid) *
+            (var(--font-size-desktop-xl) - var(--font-size-mobile-xl))
+    );
+    --font-size-2xl-fluid: calc(
+        var(--font-size-mobile-2xl) + var(--fluid) *
+            (var(--font-size-desktop-2xl) - var(--font-size-mobile-2xl))
+    );
+    --font-size-3xl-fluid: calc(
+        var(--font-size-mobile-3xl) + var(--fluid) *
+            (var(--font-size-desktop-3xl) - var(--font-size-mobile-3xl))
+    );
+    --font-size-4xl-fluid: calc(
+        var(--font-size-mobile-4xl) + var(--fluid) *
+            (var(--font-size-desktop-4xl) - var(--font-size-mobile-4xl))
+    );
+    --font-size-5xl-fluid: calc(
+        var(--font-size-mobile-5xl) + var(--fluid) *
+            (var(--font-size-desktop-5xl) - var(--font-size-mobile-5xl))
+    );
+    --font-size-6xl-fluid: calc(
+        var(--font-size-mobile-6xl) + var(--fluid) *
+            (var(--font-size-desktop-6xl) - var(--font-size-mobile-6xl))
+    );
+
+    /* Semantische fluide Schriftgroessen */
+    --sem-font-size-hero-fluid: var(--font-size-5xl-fluid);
+    --sem-font-size-hero-accent-fluid: var(--font-size-6xl-fluid);
+    --sem-font-size-headline-2xl-fluid: var(--font-size-2xl-fluid);
+    --sem-font-size-headline-xl-fluid: var(--font-size-xl-fluid);
+    --sem-font-size-headline-lg-fluid: var(--font-size-lg-fluid);
+    --sem-font-size-headline-md-fluid: var(--font-size-base-fluid);
+    --sem-font-size-headline-sm-fluid: var(--font-size-sm-fluid);
+    --sem-font-size-body-text-fluid: var(--font-size-base-fluid);
+    --sem-font-size-small-text-fluid: var(--font-size-sm-fluid);
+    --sem-font-size-intro-text-fluid: var(--font-size-lg-fluid);
+    --sem-font-size-label-small-fluid: var(--font-size-sm-fluid);
+    --sem-font-size-label-fluid: var(--font-size-base-fluid);
+    --sem-font-size-caption-fluid: var(--font-size-sm-fluid);
+    --sem-font-size-button-fluid: var(--font-size-base-fluid);
+}
+
 body {
     font-family: var(--sans-serif);
-    font-size: var(--sem-font-size-body);
+    font-size: var(--sem-font-size-body-text-fluid);
     line-height: 1.5;
 }
 

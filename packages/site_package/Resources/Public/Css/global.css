@@ -13,6 +13,7 @@ body {
     @media screen and (width > 40rem) {
         gap: 2rem;
     }
+    background-color: var(--sem-color-surface-01);
 }
 
 /* Sections */
@@ -38,4 +39,9 @@ nav a {
         text-decoration: underline;
         text-underline-offset: 0.5rem;
     }
+}
+
+.extbase-debugger {
+    width: 100vw;
+    z-index: 1;
 }

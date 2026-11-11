@@ -1,17 +1,17 @@
 <header class="main-header">
-    <div class="logo">
+    <div class="logo" aria-hidden="true">
         <f:cObject
             typoscriptObjectPath="lib.inlineSvg"
             data="{src:'EXT:site_package/Resources/Public/Icons/sisterstyle-logo.svg'}"
         />
     </div>
 
-    <nav class="main-nav">
+    <nav class="main-nav" aria-label="Hauptnavigation">
         <f:link.page
             pageUid="{startpage_id}"
             class="nav-item {f:if(condition: '{startpage_id} == {data.uid}', then: 'active')}"
         >
-            Home
+            Startseite
         </f:link.page>
         <f:for each="{mainNavigation}" as="mainNavItem">
             <f:link.page
@@ -22,4 +22,17 @@
             </f:link.page>
         </f:for>
     </nav>
+    <div class="socialmedia-links" aria-label="Social Media Links">
+        <f:link.external
+            uri="https://www.instagram.com/sisterstyleevents"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="nav-item"
+        >
+            <f:cObject
+                typoscriptObjectPath="lib.inlineSvg"
+                data="{src:'EXT:site_package/Resources/Public/Icons/instagram.svg'}"
+            />
+        </f:link.external>
+    </div>
 </header>

@@ -24,8 +24,20 @@
     flex-wrap: wrap;
     column-gap: 2rem;
 
-    a {
+    .nav-item {
         white-space: nowrap;
         color: var(--sem-color-text-default);
+
+        &.active {
+            text-decoration: underline 2px var(--sem-color-accent-05);
+            text-underline-offset: 0.5rem;
+        }
+    }
+}
+
+.socialmedia-links {
+    svg {
+        width: var(--sem-size-icon-lg);
+        height: var(--sem-size-icon-lg);
     }
 }

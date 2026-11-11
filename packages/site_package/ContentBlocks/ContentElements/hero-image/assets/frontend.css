@@ -8,22 +8,24 @@
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
-        width: 100%;
-        text-align: center;
+        background-color: var(--sem-color-surface-01);
+        padding-bottom: 2rem;
+        width: calc(100% - 8rem);
         text-align: center;
         color: var(--sem-color-spot-05);
+        max-width: 70rem;
 
         h1 {
-            font-size: var(--sem-font-size-hero-accent);
+            font-size: var(--sem-font-size-hero-accent-fluid);
         }
         h2 {
-            font-size: var(--sem-font-size-hero);
+            font-size: var(--sem-font-size-hero-fluid);
         }
     }
 }
 
 .hero-image {
-    margin-top: 5rem;
+    margin-top: 12rem;
     width: 100%;
     height: 100%;
 
@@ -31,5 +33,9 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
+    }
+
+    @media screen and (width > 40rem) {
+        margin-top: 5rem;
     }
 }
