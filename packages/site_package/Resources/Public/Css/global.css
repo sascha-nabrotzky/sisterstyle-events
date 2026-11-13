@@ -1,5 +1,12 @@
 :root {
     interpolate-size: allow-keywords;
+
+    /* Breakpoints */
+    --brkp-sm: 36rem; /* 576px */
+    --brkp-md: 48rem; /* 768px */
+    --brkp-lg: 62rem; /* 992px */
+    --brkp-xl: 75rem; /* 1200px */
+    --brkp-2xl: 887.5rem; /* 1400px */
 }
 
 body {
