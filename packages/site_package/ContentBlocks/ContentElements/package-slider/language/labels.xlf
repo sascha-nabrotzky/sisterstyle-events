@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file datatype="plaintext" original="labels.xlf" source-language="en" date="2026-11-13T11:32:13+00:00" product-name="sn/package-slider">
+    <header/>
+    <body>
+      <trans-unit id="title">
+        <source>Package Slider</source>
+      </trans-unit>
+      <trans-unit id="description">
+        <source>Description for Content Element sn/package-slider</source>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

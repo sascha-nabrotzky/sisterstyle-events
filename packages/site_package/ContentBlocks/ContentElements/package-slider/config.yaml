@@ -1,0 +1,32 @@
+name: sn/package-slider
+typeName: sn_packageslider
+group: default
+prefixFields: true
+prefixType: full
+basics:
+  - TYPO3/Appearance
+fields:
+  -
+    identifier: header
+    useExistingField: true
+    label: Header
+    type: Text
+  - identifier: collection1
+    type: Collection
+    label: Inhalt des Paketes
+    fields:
+      - identifier: text
+        useExistingField: true
+        label: Inhalt
+        type: Text
+  - identifier: collection2
+    type: Collection
+    label: Bilder des Paketes
+    maxitems: 1
+    fields:
+      - identifier: image
+        useExistingField: true
+        label: Bild
+        allowed: jpeg,jpg,png,webp
+        minitems: 1
+        type: File

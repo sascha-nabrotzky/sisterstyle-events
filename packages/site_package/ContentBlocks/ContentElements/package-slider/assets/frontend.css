@@ -1,0 +1,54 @@
+.package-slider {
+    position: relative;
+    border-radius: var(--sem-border-radius-lg);
+    background-color: var(--sem-color-surface-03);
+    padding-bottom: var(--sem-space-padding-md);
+
+    header {
+        position: absolute;
+        margin-top: -2rem;
+        padding-left: var(--sem-space-padding-md);
+        color: var(--sem-color-accent-05);
+        font-size: var(--sem-font-size-headline-04);
+    }
+
+    .content-list {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: var(--sem-space-gap-xl);
+        padding-top: var(--sem-space-padding-xl);
+        padding-right: var(--sem-space-padding-md);
+        padding-bottom: var(--sem-space-padding-md);
+        padding-left: var(--sem-space-padding-xl);
+
+        li::marker {
+            color: var(--sem-color-accent-05);
+        }
+    }
+
+    .image-collection {
+        display: flex;
+        column-gap: var(--sem-space-gap-md);
+        padding-bottom: var(--sem-space-padding-sm);
+        overflow-x: auto;
+
+        figure {
+            height: 100%;
+
+            &:first-of-type figcaption {
+                padding-left: var(--sem-space-padding-sm);
+            }
+        }
+    }
+
+    .image-wrapper {
+        width: 15rem;
+        aspect-ratio: 3 / 4;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}

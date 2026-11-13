@@ -28,7 +28,7 @@
     text-align: end;
 }
 
-@media screen and (width > 40rem) {
+@media screen and (width > 36rem) {
     .main-header:has(.hero-image-container) + .extended-top {
         padding-inline-end: calc(var(--hero-image-container-width) + 2rem);
     }

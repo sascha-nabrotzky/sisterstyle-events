@@ -9,14 +9,14 @@
         left: 50%;
         transform: translateX(-50%);
         background-color: var(--sem-color-surface-01);
-        padding-bottom: 2rem;
-        width: calc(100% - 4rem);
+        padding-bottom: var(--sem-space-padding-xl);
+        width: calc(100% - var(--space-64));
         max-width: 70rem;
         text-align: center;
         color: var(--sem-color-spot-05);
 
         @media screen and (width > 36rem) {
-            width: calc(100% - 8rem);
+            width: calc(100% - var(--space-128));
         }
 
         h1 {
