@@ -22,11 +22,33 @@
             </f:link.page>
         </f:for>
     </nav>
+
+    <button class="menu-toggle" aria-label="Menü umschalten">
+        <span class="menu-icon">Menü</span>
+    </button>
+
     <nav
-        class="socialmedia-links"
-        aria-label="Social Media Links"
-        aria-label="Social Media Navigation"
+        class="main-nav-mobile"
+        aria-label="Hauptnavigation Mobil"
+        inert="true"
     >
+        <f:link.page
+            pageUid="{startpage_id}"
+            class="nav-item {f:if(condition: '{startpage_id} == {data.uid}', then: 'active')}"
+        >
+            Startseite
+        </f:link.page>
+        <f:for each="{mainNavigation}" as="mainNavItem">
+            <f:link.page
+                pageUid="{mainNavItem.data.uid}"
+                class="nav-item {f:if(condition: mainNavItem.active, then: 'active')}"
+            >
+                {mainNavItem.title}
+            </f:link.page>
+        </f:for>
+    </nav>
+
+    <nav class="socialmedia-links" aria-label="Social Media Links">
         <f:link.external
             uri="https://www.instagram.com/sisterstyleevents"
             target="_blank"

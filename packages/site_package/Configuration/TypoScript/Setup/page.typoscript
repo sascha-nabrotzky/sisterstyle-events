@@ -31,6 +31,7 @@ page {
   }
 
   includeJSFooter {
+    menuToggle = EXT:site_package/Resources/Public/JavaScript/menu-toggle.js
   }
 
   bodyTagCObject = TEXT
