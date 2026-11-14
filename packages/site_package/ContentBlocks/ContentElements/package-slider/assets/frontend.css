@@ -6,19 +6,27 @@
 
     header {
         position: absolute;
-        margin-top: -2rem;
+        margin-top: -1.7rem;
         padding-left: var(--sem-space-padding-md);
-        color: var(--sem-color-accent-05);
-        font-size: var(--sem-font-size-headline-04);
+
+        @media screen and (width > 36rem) {
+            margin-top: -2.5rem;
+        }
+
+        .headline {
+            color: var(--sem-color-accent-05);
+            font-size: var(--sem-font-size-headline-4xl-fluid);
+        }
     }
 
     .content-list {
         display: flex;
         flex-wrap: wrap;
         column-gap: var(--sem-space-gap-xl);
+        margin: unset;
         padding-top: var(--sem-space-padding-xl);
         padding-right: var(--sem-space-padding-md);
-        padding-bottom: var(--sem-space-padding-md);
+        padding-bottom: var(--sem-space-padding-lg);
         padding-left: var(--sem-space-padding-xl);
 
         li::marker {
@@ -37,6 +45,10 @@
 
             &:first-of-type figcaption {
                 padding-left: var(--sem-space-padding-sm);
+            }
+
+            figcaption {
+                font-size: var(--sem-font-size-caption-fluid);
             }
         }
     }

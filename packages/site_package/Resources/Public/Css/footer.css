@@ -4,9 +4,11 @@
     flex-wrap: wrap;
     column-gap: 2rem;
     padding-bottom: 2rem;
+    margin-top: auto;
 
     a {
         white-space: nowrap;
         color: var(--sem-color-text-muted);
+        font-size: var(--sem-font-size-body-small);
     }
 }

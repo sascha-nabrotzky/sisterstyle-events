@@ -23,6 +23,7 @@
     flex: 1;
     flex-wrap: wrap;
     column-gap: 2rem;
+    row-gap: 0.5rem;
 
     .nav-item {
         white-space: nowrap;

@@ -89,6 +89,8 @@
     /* Semantische fluide Schriftgroessen */
     --sem-font-size-hero-fluid: var(--font-size-4xl-fluid);
     --sem-font-size-hero-accent-fluid: var(--font-size-5xl-fluid);
+    --sem-font-size-headline-4xl-fluid: var(--font-size-4xl-fluid);
+    --sem-font-size-headline-3xl-fluid: var(--font-size-3xl-fluid);
     --sem-font-size-headline-2xl-fluid: var(--font-size-2xl-fluid);
     --sem-font-size-headline-xl-fluid: var(--font-size-xl-fluid);
     --sem-font-size-headline-lg-fluid: var(--font-size-lg-fluid);
@@ -115,14 +117,30 @@ h3,
 h4,
 h5 {
     word-break: break-word;
-    font-family: var(--serif);
+    font-family: var(--font-family-serif);
     hyphens: auto;
     text-wrap: balance;
     margin-block: unset;
-    font-weight: var(--regular);
+    font-weight: var(--font-weight-regular);
 }
 
 h1,
 h2 {
     line-height: 1.1;
+}
+
+h1 {
+    font-size: var(--sem-font-size-headline-3xl-fluid);
+}
+h2 {
+    font-size: var(--sem-font-size-headline-2xl-fluid);
+}
+h3 {
+    font-size: var(--sem-font-size-headline-xl-fluid);
+}
+h4 {
+    font-size: var(--sem-font-size-headline-lg-fluid);
+}
+h4 {
+    font-size: var(--sem-font-size-headline-md-fluid);
 }

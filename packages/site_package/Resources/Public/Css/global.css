@@ -9,13 +9,20 @@
     --brkp-2xl: 87.5rem; /* 1400px */
 }
 
+html {
+    height: 100dvh;
+}
+
 body {
     display: grid;
     grid-template-columns: minmax(1rem, 1fr) repeat(2, minmax(0, 40rem)) minmax(
             1rem,
             1fr
         );
+    grid-template-rows: max-content auto max-content;
     row-gap: 1rem;
+    height: 100%;
+    background-color: var(--sem-color-surface-01);
 
     @media screen and (width > 36rem) {
         grid-template-columns:
@@ -23,7 +30,6 @@ body {
             minmax(2rem, 1fr);
         gap: 2rem;
     }
-    background-color: var(--sem-color-surface-01);
 }
 
 /* Sections */
@@ -51,16 +57,24 @@ nav a {
     }
 }
 
-.extbase-debugger {
-    width: 100vw;
-    z-index: 1;
-}
-
-figure {
-    margin: unset;
+p a {
+    text-decoration: underline;
+    color: inherit;
+    text-underline-offset: 0.5rem;
 }
 
 :focus-visible {
     outline: 2px solid var(--sem-color-accent-05);
     outline-offset: 2px;
+}
+
+/* Debugger */
+.extbase-debugger {
+    width: 100vw;
+    z-index: 1;
+}
+
+/* images */
+figure {
+    margin: unset;
 }
