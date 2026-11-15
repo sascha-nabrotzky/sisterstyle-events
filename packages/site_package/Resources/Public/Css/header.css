@@ -41,21 +41,28 @@
 }
 
 .menu-toggle {
+    display: flex;
     position: fixed;
     top: 0;
     left: 50%;
+    column-gap: 0.5rem;
     transform: translateX(-50%);
     z-index: 2;
     border: 1px solid transparent;
     border-radius: 0 0 var(--sem-border-radius-sm) var(--sem-border-radius-sm);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
     background-color: var(--sem-color-spot-05);
     color: var(--color-neutral-50);
     padding-block: var(--sem-space-padding-sm);
     padding-inline: var(--sem-space-padding-md);
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 
     @media screen and (width > 36rem) {
         display: none;
+    }
+
+    svg {
+        width: var(--sem-size-icon-sm);
+        transition: 0.3s ease-out;
     }
 }
 

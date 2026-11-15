@@ -25,6 +25,10 @@
 
     <button class="menu-toggle" aria-label="Menü umschalten">
         <span class="menu-icon">Menü</span>
+        <f:cObject
+            typoscriptObjectPath="lib.inlineSvg"
+            data="{src:'EXT:site_package/Resources/Public/Icons/angle-down-small.svg'}"
+        />
     </button>
 
     <nav
@@ -36,14 +40,14 @@
             pageUid="{startpage_id}"
             class="nav-item {f:if(condition: '{startpage_id} == {data.uid}', then: 'active')}"
         >
-            Startseite
+            &mdash;&nbsp;&nbsp;Startseite
         </f:link.page>
         <f:for each="{mainNavigation}" as="mainNavItem">
             <f:link.page
                 pageUid="{mainNavItem.data.uid}"
                 class="nav-item {f:if(condition: mainNavItem.active, then: 'active')}"
             >
-                {mainNavItem.title}
+                &mdash;&nbsp;&nbsp;{mainNavItem.title}
             </f:link.page>
         </f:for>
     </nav>
