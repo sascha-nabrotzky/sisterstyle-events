@@ -3,24 +3,22 @@
  */
 
 :root {
-    --font-size-desktop-3xl: 2.75rem;
-    --font-size-desktop-4xl: 3.4375rem;
     --font-size-desktop-2xl: 2.1875rem;
-    --font-size-desktop-base: 1.125rem;
-    --font-size-desktop-lg: 1.4375rem;
-    --font-size-desktop-xl: 1.75rem;
-    --font-size-desktop-6xl: 7.5rem;
     --font-size-desktop-5xl: 4.3125rem;
+    --font-size-desktop-4xl: 3.4375rem;
     --font-size-desktop-sm: 0.875rem;
-    --font-size-mobile-3xl: 2.07375rem;
-    --font-size-mobile-4xl: 2.488125rem;
-    --font-size-mobile-2xl: 1.728125rem;
+    --font-size-desktop-xl: 1.75rem;
+    --font-size-desktop-lg: 1.4375rem;
+    --font-size-desktop-3xl: 2.75rem;
+    --font-size-desktop-base: 1.125rem;
+    --font-size-mobile-sm: 0.833125rem;
     --font-size-mobile-base: 1.125rem;
     --font-size-mobile-lg: 1.25rem;
-    --font-size-mobile-xl: 1.44rem;
-    --font-size-mobile-6xl: 2.8125rem;
-    --font-size-mobile-5xl: 2.98625rem;
-    --font-size-mobile-sm: 0.833125rem;
+    --font-size-mobile-xl: 1.4375rem;
+    --font-size-mobile-2xl: 1.75rem;
+    --font-size-mobile-3xl: 2.0625rem;
+    --font-size-mobile-4xl: 2.5rem;
+    --font-size-mobile-5xl: 3rem;
     --color-sand-100: #f9f8f6;
     --color-sand-200: #f4f1ed;
     --color-sand-300: #eee9e5;
@@ -59,7 +57,7 @@
     --space-64: 4rem; /** Starker visueller Bruch. Abstand zwischen Hauptbereichen (z.B. Header zu Content).  */
     --space-96: 6rem; /** Maximaler Weißraum für großzügige Desktop-Layouts. */
     --space-128: 8rem;
-    --font-family-serif: 'Americana BT';
+    --font-family-serif: 'Noto Serif Display';
     --font-family-sans-serif: 'Source Sans 3';
     --font-weight-regular: 400;
     --font-weight-bold: 600;
@@ -82,7 +80,6 @@
     --sem-font-size-hero: var(--font-size-desktop-5xl);
     --sem-font-size-body: var(--font-size-desktop-base);
     --sem-font-size-label: var(--font-size-desktop-base);
-    --sem-font-size-hero-accent: var(--font-size-desktop-6xl);
     --sem-font-size-intro-text: var(--font-size-desktop-lg);
     --sem-font-size-body-small: var(--font-size-desktop-sm);
     --sem-font-size-label-small: var(--font-size-desktop-sm);

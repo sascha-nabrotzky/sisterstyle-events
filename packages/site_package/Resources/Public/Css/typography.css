@@ -1,10 +1,40 @@
-/* island-moments-regular - latin */
+/* noto-serif-display-regular - latin */
 @font-face {
     font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Island Moments';
+    font-family: 'Noto Serif Display';
     font-style: normal;
     font-weight: 400;
-    src: url('../fonts/island-moments-v8-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    src: url('../fonts/noto-serif-display-v29-latin-regular.woff2')
+        format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* noto-serif-display-italic - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Noto Serif Display';
+    font-style: italic;
+    font-weight: 400;
+    src: url('../fonts/noto-serif-display-v29-latin-italic.woff2')
+        format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* noto-serif-display-600 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Noto Serif Display';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/noto-serif-display-v29-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* noto-serif-display-600italic - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Noto Serif Display';
+    font-style: italic;
+    font-weight: 600;
+    src: url('../fonts/noto-serif-display-v29-latin-600italic.woff2')
+        format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 /* source-sans-3-regular - latin */
@@ -79,8 +109,8 @@
     );
 
     /* Semantische fluide Schriftgroessen */
-    --sem-font-size-hero-fluid: var(--font-size-4xl-fluid);
-    --sem-font-size-hero-accent-fluid: var(--font-size-5xl-fluid);
+    --sem-font-size-headline-6xl-fluid: var(--font-size-6xl-fluid);
+    --sem-font-size-headline-5xl-fluid: var(--font-size-5xl-fluid);
     --sem-font-size-headline-4xl-fluid: var(--font-size-4xl-fluid);
     --sem-font-size-headline-3xl-fluid: var(--font-size-3xl-fluid);
     --sem-font-size-headline-2xl-fluid: var(--font-size-2xl-fluid);
@@ -112,12 +142,13 @@ h5 {
     hyphens: auto;
     text-wrap: balance;
     margin-block: unset;
-    font-weight: var(--font-weight-regular);
+    font-weight: var(--font-weight-bold);
+    color: var(--sem-color-spot-05);
 }
 
 h1,
 h2 {
-    line-height: 1.1;
+    line-height: 1.2;
 }
 
 h1 {

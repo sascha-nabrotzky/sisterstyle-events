@@ -11,7 +11,7 @@
         background-color: var(--sem-color-surface-01);
         padding-bottom: var(--sem-space-padding-xl);
         width: calc(100% - var(--space-64));
-        max-width: 70rem;
+        max-width: 80rem;
         text-align: center;
         color: var(--sem-color-spot-05);
 
@@ -20,10 +20,12 @@
         }
 
         h1 {
-            font-size: var(--sem-font-size-hero-accent-fluid);
+            font-family: var(--font-family-serif);
+            font-size: calc(var(--sem-font-size-headline-5xl-fluid) * 1.25);
+            line-height: 1.3;
         }
         h2 {
-            font-size: var(--sem-font-size-hero-fluid);
+            font-size: var(--sem-font-size-headline-2xl-fluid);
         }
     }
 }

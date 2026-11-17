@@ -15,6 +15,7 @@
 
         .headline {
             color: var(--sem-color-accent-05);
+            font-family: var(--font-family-serif);
             font-size: var(--sem-font-size-headline-4xl-fluid);
         }
     }
