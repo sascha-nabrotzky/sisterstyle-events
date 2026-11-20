@@ -3,23 +3,23 @@
 <f:section name="Header" />
 
 <f:section name="Main">
-<f:asset.css
-    identifier="content-block-css-sn-sn/hero-image"
-    href="{cb:assetPath()}/frontend.css"
-/>
+    <f:asset.css
+        identifier="content-block-css-sn-sn/hero-image"
+        href="{cb:assetPath()}/frontend.css"
+    />
 
-<div id="hero-image" class="hero-image-container">
-    <header>
-        <h1>{data -> f:render.text(field: 'header')}</h1>
-        <h2>{data -> f:render.text(field: 'subheader')}</h2>
-    </header>
-    <div class="hero-image">
-        <f:for each="{data.image}" as="image">
-            <f:image
-                image="{image}"
-                alt="{f:if(condition: image.alternative, then: image.alternative, else: ' ')}"
-            />
-        </f:for>
+    <div id="hero-image" class="hero-image-container">
+        <header>
+            <h1>{data -> f:render.text(field: 'header')}</h1>
+            <h2>{data -> f:render.text(field: 'subheader')}</h2>
+        </header>
+        <div class="hero-image">
+            <f:for each="{data.image}" as="image">
+                <f:image
+                    image="{image}"
+                    alt="{f:if(condition: image.alternative, then: image.alternative, else: ' ')}"
+                />
+            </f:for>
+        </div>
     </div>
-</div>
 </f:section>

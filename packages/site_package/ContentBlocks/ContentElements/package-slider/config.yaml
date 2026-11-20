@@ -6,25 +6,39 @@ prefixType: full
 basics:
   - TYPO3/Appearance
 fields:
-  -
+  - 
     identifier: header
     useExistingField: true
     label: Header
     type: Text
-  - identifier: collection1
+  - 
+    identifier: subheader
+    useExistingField: true
+    label: Subheader
+    type: Text
+  - 
+    identifier: price
+    label: Preis
+    type: Number
+    format: decimal
+  - 
+    identifier: collection1
     type: Collection
     label: Inhalt des Paketes
     fields:
-      - identifier: text
+      - 
+        identifier: text
         useExistingField: true
         label: Inhalt
         type: Text
-  - identifier: collection2
+  - 
+    identifier: collection2
     type: Collection
     label: Bilder des Paketes
     maxitems: 1
     fields:
-      - identifier: image
+      - 
+        identifier: image
         useExistingField: true
         label: Bild
         allowed: jpeg,jpg,png,webp

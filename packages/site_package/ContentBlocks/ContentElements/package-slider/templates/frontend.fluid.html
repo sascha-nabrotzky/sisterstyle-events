@@ -3,48 +3,80 @@
 <f:section name="Header" />
 
 <f:section name="Main">
-<f:asset.css
-    identifier="content-block-css-sn/images-collection"
-    href="{cb:assetPath()}/frontend.css"
-/>
+    <f:asset.css
+        identifier="content-block-css-sn/images-collection"
+        href="{cb:assetPath()}/frontend.css"
+    />
 
-<div
-    id="{data.uid}"
-    class="package-slider {data -> f:render.text(field: 'header')}"
->
-    <header>
-        <h2 class="headline">{data.header}</h2>
-    </header>
-    <ul class="content-list">
-        <f:for each="{data.collection1}" as="content-item">
-            <li>{content-item.text}</li>
-        </f:for>
-    </ul>
     <div
-        class="image-collection"
-        tabindex="0"
-        role="region"
-        aria-label="Paketbilder"
+        id="{data.uid}"
+        class="package-slider {data -> f:render.text(field: 'header')}"
     >
-        <f:for each="{data.collection2}" as="item">
-            <f:for each="{item.image}" as="image">
-                <figure>
-                    <div class="image-wrapper">
-                        <f:image
-                            image="{image}"
-                            alt="{image.alternative}"
-                            cropVariant="default"
-                            maxWidth="700"
-                            loading="lazy"
-                        />
+        <header>
+            <h2 class="headline">{data.header}</h2>
+            <f:if condition="{data.subheader}">
+                <h3 class="subheadline">{data.subheader}</h3>
+            </f:if>
+        </header>
+
+        <f:if condition="{data.price}">
+            <f:then>
+                <div class="price">
+                    <div class="price-value-container">
+                        <span class="price-label">ab</span>
+                        <span class="price-value">
+                            <f:format.number
+                                decimals="2"
+                                decimalSeparator="."
+                                thousandsSeparator=""
+                                >{data.price}</f:format.number
+                            >
+                        </span>
+                        <span class="currency">€</span>
                     </div>
-                    <figcaption>
-                        {f:if(condition: image.description, then:
-                        image.description, else: image.alternative)}
-                    </figcaption>
-                </figure>
-            </f:for>
-        </f:for>
+                </div>
+            </f:then>
+        </f:if>
+
+        <f:if condition="{data.collection1}">
+            <f:then>
+                <ul class="content-list">
+                    <f:for each="{data.collection1}" as="content-item">
+                        <li>{content-item.text}</li>
+                    </f:for>
+                </ul>
+            </f:then>
+        </f:if>
+
+        <f:if condition="{data.collection2}">
+            <f:then>
+                <div
+                    class="image-collection"
+                    tabindex="0"
+                    role="region"
+                    aria-label="Paketbilder"
+                >
+                    <f:for each="{data.collection2}" as="item">
+                        <f:for each="{item.image}" as="image">
+                            <figure>
+                                <div class="image-wrapper">
+                                    <f:image
+                                        image="{image}"
+                                        alt="{image.alternative}"
+                                        cropVariant="default"
+                                        maxWidth="700"
+                                        loading="lazy"
+                                    />
+                                </div>
+                                <figcaption>
+                                    {f:if(condition: image.description, then:
+                                    image.description, else: image.alternative)}
+                                </figcaption>
+                            </figure>
+                        </f:for>
+                    </f:for>
+                </div>
+            </f:then>
+        </f:if>
     </div>
-</div>
 </f:section>

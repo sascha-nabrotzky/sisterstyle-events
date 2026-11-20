@@ -17,7 +17,45 @@
             color: var(--sem-color-accent-05);
             font-family: var(--font-family-serif);
             font-size: var(--sem-font-size-headline-4xl-fluid);
+            margin-bottom: var(--sem-space-gap-xs);
         }
+    }
+
+    .price {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background-color: var(--color-eucalyptus-300);
+        width: 7rem;
+        height: 7rem;
+        right: 0;
+        top: -5.5rem;
+
+        @media screen and (width > 36rem) {
+            width: 9rem;
+            height: 9rem;
+            right: 3rem;
+            top: -2rem;
+        }
+    }
+
+    .price-value-container {
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        column-gap: var(--sem-space-gap-xs);
+        font-family: var(--font-family-serif);
+    }
+
+    .price-value {
+        font-size: var(--font-size-2xl-fluid);
+    }
+
+    .price-label,
+    .currency {
+        font-size: var(--font-size-sm-fluid);
     }
 
     .content-list {
@@ -25,10 +63,16 @@
         flex-wrap: wrap;
         column-gap: var(--sem-space-gap-xl);
         margin: unset;
-        padding-top: var(--sem-space-padding-xl);
+        padding-top: var(--sem-space-padding-2xl);
         padding-right: var(--sem-space-padding-md);
         padding-bottom: var(--sem-space-padding-lg);
         padding-left: var(--sem-space-padding-xl);
+        width: calc(100% - 6rem);
+
+        @media screen and (width > 36rem) {
+            padding-top: var(--sem-space-padding-3xl);
+            width: calc(100% - 10rem);
+        }
 
         li::marker {
             color: var(--sem-color-accent-05);
@@ -40,6 +84,7 @@
         column-gap: var(--sem-space-gap-md);
         padding-bottom: var(--sem-space-padding-sm);
         overflow-x: auto;
+        scroll-snap-type: x mandatory;
 
         figure {
             height: 100%;
@@ -55,8 +100,13 @@
     }
 
     .image-wrapper {
-        width: 15rem;
+        width: 18rem;
         aspect-ratio: 3 / 4;
+        scroll-snap-align: start;
+
+        @media screen and (width > 36rem) {
+            width: 25rem;
+        }
 
         img {
             width: 100%;
